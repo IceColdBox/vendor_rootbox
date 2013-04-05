@@ -2,14 +2,14 @@
 $(call inherit-product, device/htc/endeavoru/full_endeavoru.mk)
 
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/rootbox/configs/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := endeavoru
 
 # Inherit some common aokp stuff.
-$(call inherit-product, vendor/aokp/configs/common.mk)
-$(call inherit-product, vendor/aokp/configs/common_versions.mk)
+$(call inherit-product, vendor/rootbox/configs/common.mk)
+$(call inherit-product, vendor/rootbox/configs/common_versions.mk)
 
 # PA OVERLAY_TARGET
 OVERLAY_TARGET := pa_endeavoru
